@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input#toggler {
+  -webkit-appearance: none;
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(244, 33, 33, 63%);
+  border-radius: 50px;
+  outline: none;
+}
+
+input#toggler:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background-color: navy;
+  border-radius: 50px;
+}
+
+input#toggler:checked {
+  background-color: #00ff268f;
+}
+
+input#toggler:checked:before {
+  transform: translate(100%);
+}
